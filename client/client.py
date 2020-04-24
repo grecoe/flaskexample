@@ -76,7 +76,7 @@ def request_file(url, headers, payload, output_directory, file_name):
 
             path = os.path.join(path, file_name)
 
-            with open(path, "+wb") as retrieved_content:
+            with open(path, "wb") as retrieved_content:
                 retrieved_content.write(request_result.content)
 
             return_value = path
