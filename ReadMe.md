@@ -17,10 +17,16 @@ This code creates a Flask server and also provides a client in which to exercise
 ```
     > set FLASK_APP=server.py
 ```
-4. Navigate to the /server directory
-```
-    > flask run
-```
+4. Navigate to the /server directory to run the server on local host only. 
+    - This will allow you to test the client from the same box. 
+    ```
+        > flask run
+    ```
+    - This will allow you to run the server open to the world. In this case, you probably want to creat a newtwork security rule that opens port 5000 ONLY to your external machine thereby blocking all other traffic to the port.  
+    ```
+        > python server.py
+    ```
+
 
 ### Overview
 The flask server has two APIs that are exposed.
