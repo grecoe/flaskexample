@@ -160,7 +160,7 @@ def retrieve():
                 if file_parts[1] in mimetypes.types_map:
                     mime_type = mimetypes.types_map[file_parts[1]]
                 else:
-                    response = "Mime type not found for {}".format(content[DATA_KEY])
+                    response = "Mime type not found for {}".format(content[FILE_KEY])
 
         # If file exists and mime type valid, continue.
         # Presence of CONTAINER_KEY will always use blob storage
